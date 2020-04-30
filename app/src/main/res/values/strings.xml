@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LoginPage</string>
+    <string name="login_page">Подписка</string>
+    <string name="clear">Очистить</string>
+    <string name="ok">OK</string>
+    <string name="email">Электронная почта</string>
+    <string name="username">Имя пользователя</string>
+    <string name="help">Для подписки на рассылку введите имя, e-mail и нажмите OK.</string>
+    <string name="help_ok1">Подписка на рассылку успешно оформлена.</string>
+    <string name="help_clear">Данные очищены. Для подписки на рассылку введите имя, e-mail и нажмите OK</string>
+    <string name="input_email">Введите e-mail</string>
+    <string name="input_username">Введите имя</string>
+</resources>
