@@ -6,7 +6,7 @@
     <string name="email">Электронная почта</string>
     <string name="username">Имя пользователя</string>
     <string name="help">Для подписки на рассылку введите имя, e-mail и нажмите OK.</string>
-    <string name="help_ok1">Подписка на рассылку для %1$s с адресом %2$s успешно оформлена.</string>
+    <string name="help_ok">Подписка на рассылку для %1$s с адресом %2$s успешно оформлена.</string>
     <string name="help_clear">Данные очищены. Для подписки на рассылку введите имя, e-mail и нажмите OK</string>
     <string name="input_email">Введите e-mail</string>
     <string name="input_username">Введите имя</string>

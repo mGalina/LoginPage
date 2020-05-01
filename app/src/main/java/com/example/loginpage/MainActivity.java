@@ -12,8 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText username;
     private EditText email;
-    private Button ok;
-    private Button clear;
     private TextView help;
 
 
@@ -31,39 +29,27 @@ public class MainActivity extends AppCompatActivity {
 
     private void inputUsername() {
         username = findViewById(R.id.input_username);
-        username.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                username.setText("");
-            }
-        });
     }
 
     private void inputEmail() {
         email = findViewById(R.id.input_email);
-        email.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                email.setText("");
-            }
-        });
     }
 
     public void authentication() {
-        ok = findViewById(R.id.button_ok);
+        Button ok = findViewById(R.id.button_ok);
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String name = username.getText().toString();
                 String mail = email.getText().toString();
-                help.setText(getString(R.string.help_ok1, name, mail));
+                help.setText(getString(R.string.help_ok, name, mail));
             }
         });
 
     }
 
     public void clear() {
-        clear = findViewById(R.id.button_clear);
+        Button clear = findViewById(R.id.button_clear);
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
