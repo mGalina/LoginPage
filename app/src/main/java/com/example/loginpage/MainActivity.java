@@ -5,12 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView username;
-    private TextView email;
+    private EditText username;
+    private EditText email;
     private Button ok;
     private Button clear;
     private TextView help;
@@ -53,7 +54,9 @@ public class MainActivity extends AppCompatActivity {
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                help.setText(getText(R.string.help_ok1));
+                String name = username.getText().toString();
+                String mail = email.getText().toString();
+                help.setText(getString(R.string.help_ok1, name, mail));
             }
         });
 
@@ -64,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                username.setText(R.string.input_username);
-                email.setText(R.string.input_email);
+                username.getText().clear();
+                email.getText().clear();
                 help.setText(getText(R.string.help_clear));
             }
         });
